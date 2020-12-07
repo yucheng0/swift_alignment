@@ -15,12 +15,12 @@ struct ContentView: View {
                 Text("UserName").border(Color.red)
                 Text("Email").border(Color.red)
                 Text("Phone").border(Color.red)
-             }.font(Font.system(size: 35,weight: .bold))
+             }.font(Font.system(size: 100,weight: .bold))
             
             VStack(alignment:.leading){
                 Text("Jack").frame(maxHeight:.infinity).border(Color.red);               Text("jack@gmail.com").frame(maxHeight:.infinity).border(Color.red);          Text("4001234567").frame(maxHeight:.infinity).border(Color.red);
             }.font(Font.system(size: 25))
-        }.fixedSize()           //就會平均分配高度
+        }.fixedSize()           //就會平均分配高度(固定hstack為 高度去分配的
     }
 }
 
